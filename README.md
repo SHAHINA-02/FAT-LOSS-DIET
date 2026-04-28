@@ -10,7 +10,7 @@
 
 **Live Demo:** https://fat-loss-diet.vercel.app
 
-SCREENSHOTS
+SCREENSHOTS- https://github.com/SHAHINA-02/FAT-LOSS-DIET/tree/0c3d23388e1eb5bb64835bddc2b177f41be2bea1/FAT%20LOSS
 
 ---
 
