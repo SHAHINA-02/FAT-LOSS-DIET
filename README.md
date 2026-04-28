@@ -1,16 +1,112 @@
-# React + Vite
+# LUMINA DIET PLANNER — Personalized Fat Loss & Nutrition Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![Deployed](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-Currently, two official plugins are available:
+### Your Personalized Path to Fat Loss — Beautifully Calculated.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** https://fat-loss-diet.vercel.app
 
-## React Compiler
+SCREENSHOTS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ABOUT
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Lumina Diet Planner is a personalized nutrition and fat loss calculator that takes user body metrics and goals as input and generates a tailored daily calorie target, macronutrient breakdown, and a structured sample meal plan — instantly, with no sign-up required.
+
+Built for anyone looking to understand their nutrition numbers clearly and act on them with a practical daily meal structure.
+
+---
+
+## HOW IT WORKS
+
+```
+User Input (Age, Gender, Weight, Height, Activity Level, Fat Loss Goal)
+        ↓
+BMR Calculation (Mifflin-St Jeor Formula)
+        ↓
+TDEE → Caloric Deficit Applied (based on goal)
+        ↓
+Macro Split (Protein / Carbs / Fats)
+        ↓
+Sample Meal Plan (Breakfast, Lunch, Snack, Dinner) with kcal per meal
+```
+
+---
+
+## FEATURES
+
+**User Input Form**
+- Age, gender, weight (kg), height (cm)
+- Activity level: Sedentary, Lightly Active, Moderately Active, Very Active
+- Fat loss goal: Steady Weight Loss (20% deficit) and additional options
+
+**Results Dashboard**
+- Target calories (daily limit for fat loss)
+- Maintenance calories (TDEE to maintain current weight)
+- Daily macros: Protein (g), Carbs (g), Fats (g) — colour-coded
+
+**Sample Meal Structure**
+- Four meals generated: Breakfast, Lunch, Afternoon Snack, Dinner
+- Each meal shows: suggested food, approximate macros (P / C / F), and kcal
+- Recalculate button to regenerate with updated inputs
+
+**Design**
+- Dark navy and purple gradient UI
+- Clean, readable typography
+- Fully responsive layout
+
+---
+
+## TECH STACK
+
+| Layer      | Technology              |
+|------------|-------------------------|
+| Framework  | Next.js 15 (App Router) |
+| Language   | TypeScript              |
+| Styling    | Tailwind CSS            |
+| Logic      | BMR / TDEE Calculations |
+| Deployment | Vercel                  |
+
+---
+
+## INSTALLATION
+
+**Prerequisites:** Node.js 18+
+
+```bash
+git clone https://github.com/YOUR_USERNAME/fat-loss-diet.git
+cd fat-loss-diet
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+---
+
+## ROADMAP
+
+- [ ] AI-generated meal plan using Claude API
+- [ ] Weekly meal planner view
+- [ ] Shopping list export (PDF / CSV)
+- [ ] UAE-specific food options (Arabic cuisine macros)
+- [ ] Progress tracker with weight log
+
+---
+
+## AUTHOR
+
+**SHAHINA S** — Full Stack Developer & AI Engineer, UAE
+
+- Portfolio: https://yoursite.com
+- LinkedIn: https://linkedin.com/in/yourhandle
+- Email: you@email.com
+
+---
+
+*MIT License. Open source. No sign-up required.*
